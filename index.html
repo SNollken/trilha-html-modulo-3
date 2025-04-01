@@ -1,44 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <meta name="description" content="Artigo sobre o jogo osu! - história, gameplay e comunidade">
+    <title>osu!</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-
-    <div>   
-        <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
+    <header role="banner">
+        <div class="logo" style="display: flex; align-items: center;">
+            <img src="assets/images/controle-de-jogo.png" alt="osu! Logo" width="32" style="margin-right: 8px;"> osu!
         </div>
-    </div>
+    </header>
 
-    <div class="bar"></div>
+    <nav class="bar"></nav>
 
     <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
-        </div>
+        <aside class="sidebar" aria-label="Menu lateral">
+            <h2>Conteúdo</h2>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#gameplay">Gameplay</a></li>
+                    <li><a href="#financiamento">Como Apoiar</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-        <div class="main">
-            
-        </div>
+        <main id="main-content" class="main" role="main">
+            <article>
+                <section aria-labelledby="sobre">
+                    <h1 id="sobre">Osu!</h1>
+                    <p>osu! é um jogo de ritmo gratuito desenvolvido e publicado por Dean Herbert em 2007, originalmente
+                        para o Microsoft Windows, sendo posteriormente portado para OS X, iOS e Windows Phone. A
+                        jogabilidade é baseada em outros jogos como osu! Tatakae! Ouendan, Taiko no Tatsujin, beatmania
+                        IIDX, O2Jam, Elite Beat Agents e DJMax.</p>
+                    <p>O jogo foi escrito em C# usando a .NET Framework. Em 28 de agosto de 2016, o código-fonte do jogo
+                        tornou-se open-source sob a licença MIT, e os assets do jogo sob a licença CC BY-NC 4.0 da
+                        Creative Commons. Chamado de "Lazer", o projeto tem como objetivo tornar o osu! disponível para
+                        mais plataformas e ser transparente.</p>
+                    <figure>
+                        <img src="assets/images/osu.jpg" alt="Captura de tela do gameplay do osu!">
+                        <figcaption>Exemplo de gameplay no modo standard</figcaption>
+                    </figure>
+                </section>
 
-        <div class="anchors">
+                <section aria-labelledby="gameplay">
+                    <h2 id="gameplay">Gameplay</h2>
+                    <p id="osustandard"><strong>osu!standard:</strong> Inspirado em Osu! Tatakae! Ouendan, os jogadores clicam em
+                        círculos (hit circles), deslizam em
+                        sliders e giram spinners ao ritmo da música. A pontuação depende da precisão e tempo de acerto.
+                    </p>
+                    <p id="osumania"><strong>osu!mania:</strong> Um jogo de ritmo de rolagem vertical, similar a beatmania e
+                        StepMania. As notas caem em pistas,
+                        e o jogador deve pressionar as teclas correspondentes. Pode variar de 4 a 9 teclas, aumentando a
+                        dificuldade.</p>
+                    <p id="osutaiko"><strong>osu!taiko:</strong> Simula o jogo de tambor japonês (Taiko no Tatsujin). O jogador
+                        pressiona botões correspondentes
+                        às notas que aparecem, seguindo o ritmo.</p>
+                    <p id="osucatch"><strong>osu!catch:</strong> Baseado em EZ2CATCH, onde o jogador controla um apanhador para pegar
+                        frutas que caem da tela.</p>
+                </section>
+
+                <section aria-labelledby="financiamento">
+                    <h2 id="financiamento">Como apoiar o projeto</h2>
+                    <p id="osusupporter"><strong>osu!supporter:</strong> O jogo oferece um serviço opcional chamado osu!supporter, que
+                        concede recursos extras sem
+                        vantagens competitivas. É um pagamento único com duração limitada (1 mês a 2 anos). Você também
+                        pode dar osu!supporter para jogadores que você gosta.</p>
+                </section>
+            </article>
+        </main>
+
+        <aside class="anchors" aria-label="Navegação secundária">
             <h2>Neste Artigo</h2>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Osu!</a></li>
+                    <li><a href="#osustandard">osu!standard</a></li>
+                    <li><a href="#osumania">osu!mania</a></li>
+                    <li><a href="#osutaiko">osu!taiko</a></li>
+                    <li><a href="#osucatch">osu!catch</a></li>
+                    <li><a href="#osusupporter">osu!supporter</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+
+    <footer role="contentinfo">
+        <div class="footer">
+            <p>© 2024 Artigo sobre osu!. Apenas por motivos educacionais.</p>
             <ul>
-                <li><a href="#">Âncoras</a></li>
+                <li><a href="https://osu.ppy.sh/" target="_blank" rel="noopener noreferrer">Site Oficial</a></li>
             </ul>
         </div>
-    </div>
-
-    <div class="footer">
-
-    </div>
+    </footer>
 </body>
+
 </html>
